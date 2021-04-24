@@ -69,16 +69,16 @@ function saveDescription(event) {
 function updateTime() {
     var now = moment();
     displayTime.text(now.format("h:mm:ss a, dddd, MMMM Do YYYY"));
-    if (currentHour !== now.format("H")) {
-        updateBlocks();
-    }
+    // if (currentHour !== now.format("H")) {
+    //     updateBlocks();
+    // }
 }
 // Update timeblock colors
-function updateBlocks() {
-    for (i = 6; i < 22; i++) {
-        var time = moment(i, "H").format();
-    }
-}
+// function updateBlocks() {
+//     for (i = 6; i < 22; i++) {
+//         var time = moment(i, "H").format();
+//     }
+// }
 
 
 // EVENTLISTENERS
